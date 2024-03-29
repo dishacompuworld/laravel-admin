@@ -11,9 +11,16 @@ class UsersSeeder extends Seeder
 
         $result = User::create([
             'name' => 'Admin',
-            'email' => 'admin@wwm.com',
+            'email' => 'rajesh@dishacompuworld.com',
             'password' => bcrypt('123456'),
             'groups' => '1',
+            'status' => '1',
+        ],
+        [
+            'name' => 'Saurabh',
+            'email' => 'saurabh@dishacompuworld.com',
+            'password' => bcrypt('123456'),
+            'groups' => '2',
             'status' => '1',
         ]);
 
